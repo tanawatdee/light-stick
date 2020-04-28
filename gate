@@ -1,0 +1,143 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000026e80c0 .scope module, "gate" "gate" 2 75;
+ .timescale -9 -10;
+P_00000000026f0f30 .param/l "arr" 0 2 80, C4<00011011>;
+v000000000274a2b0_0 .net *"_s4", 1 0, L_0000000002752dd0;  1 drivers
+v000000000274a670_0 .var/i "i", 31 0;
+v000000000274a7b0_0 .net "i1", 0 0, L_0000000002752bf0;  1 drivers
+v00000000027498b0_0 .net "i2", 0 0, L_0000000002753190;  1 drivers
+v0000000002749b30_0 .var/i "k", 31 0;
+v0000000002749bd0_0 .net "oAnd", 0 0, L_00000000026f7780;  1 drivers
+v00000000027546d0_0 .net "oBuf", 0 0, L_00000000026e9570;  1 drivers
+v0000000002753af0_0 .net "oNand", 0 0, L_00000000026e6f10;  1 drivers
+v0000000002754310_0 .net "oNor", 0 0, L_00000000026e6ea0;  1 drivers
+v00000000027532d0_0 .net "oNot", 0 0, L_00000000026f6430;  1 drivers
+v0000000002753690_0 .net "oOr", 0 0, L_00000000026f59f0;  1 drivers
+v0000000002754770_0 .net "oXnor", 0 0, L_00000000026e4170;  1 drivers
+v0000000002753c30_0 .net "oXor", 0 0, L_00000000026e4100;  1 drivers
+L_0000000002752bf0 .part L_0000000002752dd0, 1, 1;
+L_0000000002753190 .part L_0000000002752dd0, 0, 1;
+L_0000000002752dd0 .part v0000000002749b30_0, 0, 2;
+S_000000000108d410 .scope module, "A1" "And" 2 85, 2 21 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026f7780 .functor AND 1, L_0000000002752bf0, L_0000000002753190, C4<1>, C4<1>;
+v00000000026f8c30_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v00000000026e8240_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v00000000026e82e0_0 .net "o", 0 0, L_00000000026f7780;  alias, 1 drivers
+S_000000000108d590 .scope module, "B1" "Buf" 2 83, 2 3 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i"
+    .port_info 1 /OUTPUT 1 "o"
+L_00000000026e9570 .functor BUF 1, L_0000000002752bf0, C4<0>, C4<0>, C4<0>;
+v000000000274a3f0_0 .net "i", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v0000000002749db0_0 .net "o", 0 0, L_00000000026e9570;  alias, 1 drivers
+S_00000000026e5c10 .scope module, "N1" "Not" 2 84, 2 12 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i"
+    .port_info 1 /OUTPUT 1 "o"
+L_00000000026f6430 .functor NOT 1, L_0000000002752bf0, C4<0>, C4<0>, C4<0>;
+v000000000274a350_0 .net "i", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v0000000002749f90_0 .net "o", 0 0, L_00000000026f6430;  alias, 1 drivers
+S_00000000026e5d90 .scope module, "Na1" "Nand" 2 88, 2 48 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026e6f10 .functor NAND 1, L_0000000002752bf0, L_0000000002753190, C4<1>, C4<1>;
+v0000000002749950_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v000000000274a0d0_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v000000000274a490_0 .net "o", 0 0, L_00000000026e6f10;  alias, 1 drivers
+S_00000000026e3e00 .scope module, "No1" "Nor" 2 87, 2 39 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026e6ea0 .functor NOR 1, L_0000000002752bf0, L_0000000002753190, C4<0>, C4<0>;
+v000000000274a5d0_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v00000000027499f0_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v000000000274a030_0 .net "o", 0 0, L_00000000026e6ea0;  alias, 1 drivers
+S_00000000026e3f80 .scope module, "O1" "Or" 2 86, 2 30 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026f59f0 .functor OR 1, L_0000000002752bf0, L_0000000002753190, C4<0>, C4<0>;
+v000000000274a210_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v000000000274a170_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v0000000002749d10_0 .net "o", 0 0, L_00000000026f59f0;  alias, 1 drivers
+S_00000000026e6ba0 .scope module, "X1" "Xor" 2 89, 2 57 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026e4100 .functor XOR 1, L_0000000002752bf0, L_0000000002753190, C4<0>, C4<0>;
+v000000000274a710_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v0000000002749c70_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v0000000002749e50_0 .net "o", 0 0, L_00000000026e4100;  alias, 1 drivers
+S_00000000026e6d20 .scope module, "Xn1" "Xnor" 2 90, 2 66 0, S_00000000026e80c0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "i1"
+    .port_info 1 /INPUT 1 "i2"
+    .port_info 2 /OUTPUT 1 "o"
+L_00000000026e4170 .functor XNOR 1, L_0000000002752bf0, L_0000000002753190, C4<0>, C4<0>;
+v000000000274a530_0 .net "i1", 0 0, L_0000000002752bf0;  alias, 1 drivers
+v0000000002749ef0_0 .net "i2", 0 0, L_0000000002753190;  alias, 1 drivers
+v0000000002749a90_0 .net "o", 0 0, L_00000000026e4170;  alias, 1 drivers
+    .scope S_00000000026e80c0;
+T_0 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000000002749b30_0, 0, 32;
+    %end;
+    .thread T_0;
+    .scope S_00000000026e80c0;
+T_1 ;
+    %vpi_call 2 94 "$dumpfile", "gate.vcd" {0 0 0};
+    %vpi_call 2 95 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000000026e80c0 {0 0 0};
+    %pushi/vec4 3, 0, 32;
+    %store/vec4 v000000000274a670_0, 0, 32;
+T_1.0 ;
+    %pushi/vec4 0, 0, 32;
+    %load/vec4 v000000000274a670_0;
+    %cmp/s;
+    %flag_or 5, 4;
+    %jmp/0xz T_1.1, 5;
+    %pushi/vec4 27, 0, 8;
+    %load/vec4 v000000000274a670_0;
+    %muli 2, 0, 32;
+    %part/s 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v0000000002749b30_0, 4, 1;
+    %pushi/vec4 27, 0, 8;
+    %load/vec4 v000000000274a670_0;
+    %muli 2, 0, 32;
+    %addi 1, 0, 32;
+    %part/s 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v0000000002749b30_0, 4, 1;
+    %delay 100, 0;
+    %vpi_call 2 100 "$display", "done testing case %d", v000000000274a670_0 {0 0 0};
+    %load/vec4 v000000000274a670_0;
+    %subi 1, 0, 32;
+    %store/vec4 v000000000274a670_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %vpi_call 2 103 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "gate.v";

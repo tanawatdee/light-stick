@@ -1,0 +1,37 @@
+$date
+	Mon Dec 04 15:48:51 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module TOP $end
+$var wire 1 ! in_clock $end
+$var wire 1 " led_b $end
+$var wire 1 # led_g $end
+$var wire 1 $ led_r $end
+$var wire 1 % next $end
+$var wire 1 & prev $end
+$var wire 7 ' seven_seg [6:0] $end
+$var wire 1 ( shake $end
+$var reg 1 ) clock $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+z(
+bz '
+z&
+z%
+z$
+z#
+z"
+z!
+$end
+#15
+1)
+#20
+0)

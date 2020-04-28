@@ -1,0 +1,49 @@
+$date
+	Sat Dec 02 19:02:13 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ACC $end
+$var wire 1 ! clk $end
+$var wire 1 " next $end
+$var wire 1 # prev $end
+$var wire 1 $ shake $end
+$var reg 12 % iTime [11:0] $end
+$var reg 1 & n $end
+$var reg 1 ' p $end
+$var reg 1 ( restart $end
+$var reg 2 ) shaked [1:0] $end
+$var reg 4 * song_no [3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001 *
+b0 )
+1(
+0'
+0&
+b0 %
+z$
+0#
+0"
+z!
+$end
+#10
+b1 *
+1"
+1&
+#20
+0"
+0&
+#30
+b1001 *
+1#
+1'
+#40
+0#
+0'
